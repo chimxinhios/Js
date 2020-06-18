@@ -1,0 +1,37 @@
+<html>
+   <head>
+      
+      <script type="text/javascript">
+         //<!--
+         function geConfirmation(){
+               var retVal = confirm("Bạn có muốn xem sẽ ?");
+               if( retVal == true ){
+                  alert ("Suốt ngày xem sẽ quay tay, loser vlvl !");
+                  window.location="http://www.vietjack.com";
+                  return true;
+               }
+               else{
+                  alert ("Bạn là một người tốt !");
+                  return false;
+               }
+         }
+         function chuot(){
+            alert('aaaa');
+         }
+            // function Redirect() {
+            //    window.location="http://www.vietjack.com";
+            // }
+         //-->
+      </script>
+      
+   </head>
+   
+   <body>
+      <p>Click the following button, you will be redirected to home page.</p>
+      
+      <form>
+         <input type="button" value="Redirect Me" onclick="geConfirmation();"  />
+      </form>
+      
+   </body>
+</html>
