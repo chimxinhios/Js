@@ -17,9 +17,9 @@
 //  - Boolean là kiểu dữ liệu luận lí logic.
 //  - Boolean trả về 2 kết quả là true hoặc false .
 
-// console.log("Nhập C,N cho cả abcd :");
-//  let n = prompt("Enter a number :");
-//  let c = prompt(" Vui lòng nhập điểm bắt đầu vòng lặp (c):");
+
+
+
 
 // console.log("Câu 3 :") ;
 // console.log("a.");
@@ -29,18 +29,20 @@
 // }
 
 // console.log("b.");
-
+//  let n = prompt("Enter a number :");
 // for(let i = 0; i < n; i++){
 //     console.log(i);
 // }
 // console.log("c.");
+//  let n = prompt("Enter a number :");
 // let i = 3;
 // while(i<n){
 //     console.log(i);
 //     i++;
 // }
 // console.log("d.");
-
+//  let c = prompt(" Vui lòng nhập điểm bắt đầu vòng lặp (c):");
+//  let n = prompt("Enter a number :");
 // while(c < n){
 //     console.log(c);
 //     c++;
@@ -64,14 +66,15 @@
 //     c+=s;
 // }
 
-// Câu 4 :
+//Câu 4 :
 // let  n = prompt("Nhập lại N cho câu 4 :");
 //  let fac = 1;
 // for(let i = 1;i<=n; i++){
+    
 //  fac *= i;
 
 // }
-// console.log(fac);
+//  console.log(fac);
 
 // Câu 5 :
 // let age = prompt("How old are you ?");
@@ -82,10 +85,16 @@
 // }
 // Câu 6 :
 // let x = prompt("Nhập X : ");
-// if(x<(9/2))
-// alert("Lower half of 9");
-// if(x>(9/2))
-// alert("higher half of 9");
+// if(x<(9/2)){
+//     alert("Lower half of 9");
+// }
+
+// else if(x>(9/2)){
+//     alert("higher half of 9");
+// } else {
+//     alert("Your number is equals half of 9 ");
+// }
+
 
 // Câu 7 :
 // let x = prompt("x = ");
