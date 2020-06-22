@@ -201,11 +201,18 @@
 
 // let a = 360/canh;
 // console.log(a);
-
-// for(let i = 0; i < canh; i++){
-//     fd(100);
-//     rt(a);
+// if(canh > 360 ){
+//     for(let i = 0; i < canh; i++){
+//         fd(1);
+//         rt(a);
+//     }
+// } else {
+//     for(let i = 0; i < canh; i++){
+//         fd(100);
+//         rt(a);
+//     }
 // }
+
 
 // Câu 13 :
 
