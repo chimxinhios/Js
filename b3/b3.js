@@ -210,7 +210,7 @@
 
 // let a = 360/canh;
 // console.log(a);
-// if(canh > 360 ){
+// if(canh > 359 ){
 //     for(let i = 0; i < canh; i++){
 //         fd(1);
 //         rt(a);
