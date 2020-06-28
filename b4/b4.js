@@ -74,7 +74,8 @@
 // const arr = [3, 4, 6, -9, 10, -88, 2];
 // let usernum = Number(prompt("Enter a number "));
 // let c = arr.indexOf(usernum);
-// if(c < 0 ){
+
+// if(c < 0){
 //     alert(usernum + " is NOT found in my array ");
 // } else {
 //     alert(usernum + " is FOUND in my array at index "+ c);
