@@ -142,4 +142,3 @@ console.log("Số ngẫu nhiên trong mảng : " + arr[Math.floor(Math.random() 
 // alert("We are out of question ")
 // alert("Bạn đúng " + score + " câu");
 
-console.log("Part 2 y chang bài 15 hôm trước nên em không làm nữa ");
