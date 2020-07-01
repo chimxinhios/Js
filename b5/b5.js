@@ -30,12 +30,12 @@
 // console.log(dueDate + '\n');
 // console.log(assignTo + '\n');
 
-console.log("Bài 3 : ");
-console.log("3.1 :");
-console.log(" Kiểu dữ liệu ngoài cùng : object ");
-console.log("3.2");
-console.log(" Hits là một mảng ");
-console.log("3.3 :");
+// console.log("Bài 3 : ");
+// console.log("3.1 :");
+// console.log(" Kiểu dữ liệu ngoài cùng : object ");
+// console.log("3.2");
+// console.log(" Hits là một mảng ");
+// console.log("3.3 :");
 
 
 
@@ -74,39 +74,39 @@ console.log("3.3 :");
 //     i++;
 // }
 
-console.log("Bài 5 :");
+// console.log("Bài 5 :");
 
-let products = [
-    xiaomi = {
-        Name: 'Xiaomi portable charger 20000mah',
-        Brand: 'Xiaomi',
-        Price: 428,
-        Color: 'White',
-        Category: 'Charger'
-    },
-    vsmart = {
-        Name: 'VSmart Active 1',
-        Brand: 'VSmart',
-        Price: 5487,
-        Color: ' Black',
-        Category: 'Phone'
-    },
-    iphone = {
-        Name: 'IPhone X',
-        Brand: 'Apple',
-        Price: 21490,
-        Color: 'Gray',
-        Category: 'Phone'
-    },
-    samsung = {
-        Name: 'Samsung Galaxy A9',
-        Brand: 'Samsung',
-        Price: 8490,
-        Color: 'Blue',
-        Category: 'Phone'
+// let products = [
+//     xiaomi = {
+//         Name: 'Xiaomi portable charger 20000mah',
+//         Brand: 'Xiaomi',
+//         Price: 428,
+//         Color: 'White',
+//         Category: 'Charger'
+//     },
+//     vsmart = {
+//         Name: 'VSmart Active 1',
+//         Brand: 'VSmart',
+//         Price: 5487,
+//         Color: ' Black',
+//         Category: 'Phone'
+//     },
+//     iphone = {
+//         Name: 'IPhone X',
+//         Brand: 'Apple',
+//         Price: 21490,
+//         Color: 'Gray',
+//         Category: 'Phone'
+//     },
+//     samsung = {
+//         Name: 'Samsung Galaxy A9',
+//         Brand: 'Samsung',
+//         Price: 8490,
+//         Color: 'Blue',
+//         Category: 'Phone'
 
-    }
-];
+//     }
+// ];
 // for (let i in products) {
 //     console.log("--------------")
 //     console.log("Name : " + products[i].Name);
@@ -129,10 +129,10 @@ let products = [
 // }
 // console.log("5.4 : ");
 
-products[0].Providers = 'Phukienzero Dientuccc';
-products[1].Providers = 'Tgdd Ddghn VhStore';
-products[2].Providers = 'Tgdd';
-products[3].Providers = 'Tgdd';
+// products[0].Providers = 'Phukienzero Dientuccc';
+// products[1].Providers = 'Tgdd Ddghn VhStore';
+// products[2].Providers = 'Tgdd';
+// products[3].Providers = 'Tgdd';
 
 // for (let i in products) {
 //     console.log("--------------")
@@ -329,4 +329,86 @@ products[3].Providers = 'Tgdd';
 //     rt(1);
 //     fd(1);
 // }
+
+let a = [
+    {
+        task: 'HTML',
+        complete: false
+    },
+    {
+        task: 'CSS',
+        complete: false
+    },
+    {
+        task: 'Basics of JavaScript',
+        complete: false
+    },
+    {
+        task: 'Node Package Manager',
+        complete: false
+    },
+    {
+        task: 'Git',
+        complete: false
+    }
+
+];
+// console.log("6.1 :");
+// console.log("Hi there, this is your learning tasks to front-end developer career : ");
+
+// for (let i = 0; i < a.length; i++) {
+//     let j = i + 1;
+//     console.log(j + '. ' + a[i].task);
+//     console.log("Complete : " + a[i].complete);
+
+// };
+console.log("6.2 :");
+let check = true;
+let choiceSystem = ["n", "d", "u", "c"];
+while (check == true) {
+    let userw = prompt("Enter your command (New, Delete, update, Complete)");
+
+    if (userw == 'n') {
+        let newuserw = prompt("Enter new task ");
+        a.push({ task: newuserw, complete: false });
+
+        for (let i = 0; i < a.length; i++) {
+            let j = i + 1;
+            console.log(j + '. ' + a[i].task);
+            console.log("Complete : " + a[i].complete);
+
+        };
+        console.log(a);
+
+    }
+    else if (userw == 'd') {
+        let deuser = prompt("Enter positon ");
+        a.splice(deuser, 1);
+        console.log(a);
+
+    }
+    else if (userw == 'u') {
+        let upuserw = prompt("Enter position ");
+        let newtitle = prompt("Enter new title ");
+        for (let i in a) {
+            a[upuserw].task = newtitle;
+        }
+        console.log(a);
+
+
+    }
+    else if (userw == 'c') {
+        let comuser = prompt("Enter position ");
+        a[comuser].complete = true;
+        console.log(a);
+    }
+    else {
+        console.log("Chọn sai ");
+        check = false;
+
+    }
+    console.log(a);
+
+}
+
 

@@ -930,50 +930,50 @@ let job = {
     ]
 }
 
-//console.log("Bài 15 : ");
-// console.log("15.1 : ");
-// console.log(job);
-// console.log("15.2 : ");
-// console.log(job.hits[0]);
-// console.log("15.3 :") ;
-// console.log(job.hits[0].jobTitle);
-// console.log("15.4 :");
-// console.log(job.hits[0].benefits);
+console.log("Bài 15 : ");
+console.log("15.1 : ");
+console.log(job);
+console.log("15.2 : ");
+console.log(job.hits[0]);
+console.log("15.3 :") ;
+console.log(job.hits[0].jobTitle);
+console.log("15.4 :");
+console.log(job.hits[0].benefits);
 
-// console.log("15.5 : ");
-// console.log("first job hit benefit : ");
-// for(let i in job.hits[0].benefits){
+console.log("15.5 : ");
+console.log("first job hit benefit : ");
+for(let i in job.hits[0].benefits){
 
-//     console.log(' - ' + job.hits[0].benefits[i].benefitValue);
-// }
+    console.log(' - ' + job.hits[0].benefits[i].benefitValue);
+}
 
-// console.log("Bài 15.6 : ");
+console.log("Bài 15.6 : ");
 
-// for(let i in job.hits){
-//     console.log(job.hits[i].jobTitle);
-//     console.log("Benefits : ");
-//     for(let j in job.hits[i].benefits)
-//     console.log(' - ' + job.hits[i].benefits[j].benefitValue);
-//     console.log('-----------------')
-// }
+for(let i in job.hits){
+    console.log(job.hits[i].jobTitle);
+    console.log("Benefits : ");
+    for(let j in job.hits[i].benefits)
+    console.log(' - ' + job.hits[i].benefits[j].benefitValue);
+    console.log('-----------------')
+}
 
-// console.log("Bài 15.7 :");
+console.log("Bài 15.7 :");
 
-// for (let i in job.hits) {
-//     console.log('Title : ' + job.hits[i].jobTitle);
-//     console.log('Salary : ' + job.hits[i].jobSalary);
-//     console.log('Location : \n' + ' - ' + job.hits[i].locations);
+for (let i in job.hits) {
+    console.log('Title : ' + job.hits[i].jobTitle);
+    console.log('Salary : ' + job.hits[i].jobSalary);
+    console.log('Location : \n' + ' - ' + job.hits[i].locations);
     
-//     console.log("Benefits : ");
-//     for (let j in job.hits[i].benefits)
-//         console.log(' - ' + job.hits[i].benefits[j].benefitValue);
-//     //console.log(job.hits[i].skills);
-//     console.log("Skills : ");
-//     for (let j in job.hits[i].skills)
-//         console.log(' - ' + job.hits[i].skills[j]);
+    console.log("Benefits : ");
+    for (let j in job.hits[i].benefits)
+        console.log(' - ' + job.hits[i].benefits[j].benefitValue);
+    //console.log(job.hits[i].skills);
+    console.log("Skills : ");
+    for (let j in job.hits[i].skills)
+        console.log(' - ' + job.hits[i].skills[j]);
     
 
-//     console.log('-------------------------------');
+    console.log('-------------------------------');
 
-// }
+}
 
