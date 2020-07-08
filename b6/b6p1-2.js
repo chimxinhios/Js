@@ -76,69 +76,67 @@ console.log("Số ngẫu nhiên trong mảng : " + arr[Math.floor(Math.random() 
 //     alert("ngu");
 //   }
 //console.log("part 1 (7-8) :");
-// let a = [
-//   {
-//     title: 'Which fictional detective lived at 221b baker street ?',
-//     1: 'Watson',
-//     2: 'Sam Spade',
-//     3: 'Scubidu',
-//     4: 'Sherlock holmes'
-//   },
-//   {
-//     title: 'What sweet food made by bees using nectar from flowers ? ',
-//     1: 'Bread',
-//     2: 'Honey',
-//     3: 'Sugar',
-//     4: 'Potent'
-//   },
-//   {
-//     title: 'How many legs do an optopus has ?',
-//     1: '4 legs',
-//     2: 'No legs',
-//     3: '8 legs',
-//     4: '2 legs'
-//   },
-//   {
-//     title: 'Which country is home to the Kangaroo ? ',
-//     1: 'Australia',
-//     2: 'Autria',
-//     3: 'New Zealand',
-//     4: 'US'
-//   }
-// ];
-// let score = 0;
-// for (let i = 0; i < 4; i++) {
-//   let rand = Math.floor(Math.random() * a.length);
+let a = [
+  {
+    title: 'Which fictional detective lived at 221b baker street ?',
+    1: 'Watson',
+    2: 'Sam Spade',
+    3: 'Scubidu',
+    4: 'Sherlock holmes'
+  },
+  {
+    title: 'What sweet food made by bees using nectar from flowers ? ',
+    1: 'Bread',
+    2: 'Honey',
+    3: 'Sugar',
+    4: 'Potent'
+  },
+  {
+    title: 'How many legs do an optopus has ?',
+    1: '4 legs',
+    2: 'No legs',
+    3: '8 legs',
+    4: '2 legs'
+  },
+  {
+    title: 'Which country is home to the Kangaroo ? ',
+    1: 'Australia',
+    2: 'Autria',
+    3: 'New Zealand',
+    4: 'US'
+  }
+];
+let score = 0;
+for (let i = 0; i < 4; i++) {
+  let rand = Math.floor(Math.random() * a.length);
 
-//   let user = prompt(
-//     a[rand].title + "\n" + '1. ' +
-//     a[rand][1] + '\n' + '2. ' +
-//     a[rand][2] + '\n' + '3. ' +
-//     a[rand][3] + '\n' + '4. ' +
-//     a[rand][4]
-//   );
-//   if (user == 1) {
-//     if (a[rand][1] == 'Watson') {
-//       score += 1;
-//     }
+  let user = prompt(
+    a[rand].title + "\n" + '1. ' +
+    a[rand][1] + '\n' + '2. ' +
+    a[rand][2] + '\n' + '3. ' +
+    a[rand][3] + '\n' + '4. ' +
+    a[rand][4]
+  );
+  if (user == 1) {
+    if (a[rand][1] == 'Watson') {
+      score += 1;
+    }
 
-//   } else if (user == 2) {
-//     if (a[rand][2] == 'Honey' && 'No legs') {
-//       score += 1;
-//     }
-//   // } else if (user == 3) {
-//   //   if (a[rand][3] == '8 legs') {
-//   //     score += 1;
-//   //   }
-//   } else if (user == 4){
-//     if (a[rand][4] == 'US') {
-//       score += 1;
-//     }
-//   } 
-//   alert(score);
-
-//   a.splice(rand, 1);
-// }
-// alert("We are out of question ")
-// alert("Bạn đúng " + score + " câu");
+  } else if (user == 2) {
+    if (a[rand][2] == 'Honey' || a[rand][2] == 'No legs') {
+      score += 1;
+    }
+  // } else if (user == 3) {
+  //   if (a[rand][3] == '8 legs') {
+  //     score += 1;
+  //   }
+  } else if (user == 4){
+    if (a[rand][4] == 'US') {
+      score += 1;
+    }
+  }
+  a.splice(rand, 1);
+}
+alert("We are out of question ")
+alert("Bạn đúng " + score + " câu");
 
