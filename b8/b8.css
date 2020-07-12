@@ -1,0 +1,22 @@
+
+form {
+    width: 200px;
+    height: 200px;
+    background-color: green;
+    text-align: center;
+}
+#add {
+    width: 30%;
+    height: 30%;
+    color: green;
+}
+#value {
+    width: 30%;
+    height: 30%;
+    color: green;
+}
+#sub {
+    width: 30%;
+    height: 30%;
+    color: green;
+}
