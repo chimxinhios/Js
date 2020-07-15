@@ -24,6 +24,11 @@ function start (){
 stop = function() {
    clearInterval(timeout);
 }
+function load(){
+   let arrquote = ['a', 'b','c'];
+   let rand = Math.floor(Math.random() * arrquote.length) ;
+   document.getElementById("quote").innerHTML = arrquote[rand] ;
+}
 
 
 

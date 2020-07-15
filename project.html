@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="content" style="border: solid 1px; padding: 20px; background: #ddd;">
+        <button onclick="creat()">aaa</button>
+        <script>
+            document.getElementById("content").style.display = 'none';
+        </script>
+    </div>
+
+
+    <form>
+        <input type="text" placeholder="nhap id" id="id">
+        <input type="password" placeholder="pass" id="pass">
+        <input type="button" value="login" onclick="check();">
+        <p id="hienid"></p>
+    </form>
+    <script>
+        function getid() {
+            let id = document.getElementById("id").value;
+            document.getElementById("hienid").innerHTML = id;
+        }
+    </script>
+
+    <input type="button" value="batdau" onclick="start();">
+    <p id="cauhoi"></p>
+
+    <form id="trl">
+
+        <input type="button" value="" id="trl1" onclick="kqtrue(trl1.value);">
+        <input type="button" value="" id="trl2" onclick="kqtrue(trl2.value);">
+        <input type="button" value="" id="trl3" onclick="kqtrue(trl3.value);">
+        <input type="button" value="" id="trl4" onclick="kqtrue(trl4.value);">
+        <br>
+        <input type="button" value="" id="sco">
+        <p id="kqua"></p>
+        <p id="diem"></p>
+     
+    </form>
+
+
+    <script src="project.js"></script>
+</body>
+
+</html>
