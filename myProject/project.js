@@ -34,6 +34,14 @@ function start() {
             2: 3,
             3: 4,
             true: 2
+        },
+        {
+            title: '2 + 2 = ?',
+            0: 1,
+            1: 2,
+            2: 3,
+            3: 4,
+            true: 4
         }
     ];
     // document.getElementById("cauhoi").innerHTML = cauhoi[0].title;
@@ -60,10 +68,10 @@ function start() {
             document.getElementById("answer4").value = cauhoi[i][3];
             i++;
         }
-
-
     };
     checkkq = function (trl) {
+        clearInterval(doquizz);
+        doquizz();
         let a = trl;
         for (let j = 0; j < cauhoi.length; j++) {
             tim = 0;
